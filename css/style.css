@@ -50,6 +50,8 @@ body {
     border: 0;
     border-radius: 8px;
     cursor: pointer;
+    border: 1px solid var(--orange);
+
 }
 
 .main {
@@ -371,7 +373,7 @@ mobile device view
     .nav-bar,
     .quick_feature_area {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
     }
 
     .navbar-lists {
@@ -447,12 +449,57 @@ mobile device view
     .footer{
         margin-bottom: 45px;
     }
+    .copyRight-area{
+        padding: 30px 0;
+    }
 
     .copy-right-text {
         font-size: 15px;
     }
 }
 
+/* table device responsive  */
 
+@media screen and (min-width:557px) and (max-width:992px) {
+    .container{
+        width: 100%;
+        padding: 20px;
+    }
+    .banner-content {
+        padding: 0 20px;
+    }
+    .main, .margin-top-section {
+        margin-top: 50px;
+    }
+    .quick_feature_area {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .love-enjoy-feature{
+        flex-direction: column;
+    }
+    .experience-year{
+        position: static;
+        margin-top: 50px;
+    }
+    .year-btn{
+        padding: 25px 40px;
+    }
+    .experience-year .year-btn span{
+        font-size: 40px;
+    }
+
+    .fact-warper {
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .sponsor-warper{
+        grid-template-columns: repeat(3,1fr);
+        gap: 36px
+    }
+    .sponsor-item>img {
+        width: 50%;
+    }
+}
 
 /* responsive device css end */
