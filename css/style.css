@@ -203,9 +203,11 @@ body {
 .love-enjoy-feature-object>img {
     width: 100%;
 }
-.enjoy-feature-section{
+
+.enjoy-feature-section {
     position: relative;
 }
+
 .experience-year {
     text-align: center;
     position: absolute;
@@ -225,8 +227,121 @@ body {
 }
 
 /* love & enjoy feature css end */
+/* fact area css start  */
+.fect-area-content {
+    max-width: 542px;
+}
+
+.fact-warper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 50px;
+    padding: 0 25px;
+}
+
+.fact-item {
+    padding: 40px 30px;
+    border: 1px solid var(--orange);
+    border-radius: 8px;
+    text-align: center;
+    width: 241.83px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.fact-item:hover {
+    background-color: var(--orange);
+    /* transform: scale(1.1); */
+    color: var(--white);
+    box-shadow: inset 0 0 20px 20px hsla(0, 1%, 52%, 0.325);
+}
+
+.fact-item:hover .fact-count {
+    color: var(--white);
+}
+
+.fact-item:hover .fact-title {
+    color: var(--white);
+}
+
+.fact-item:hover img {
+    transform: scale(1.2);
+}
+
+.fact-item>img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.fact-count {
+    font-weight: 600;
+    font-size: 45px;
+    color: var(--hitGray);
+    margin-bottom: 5px;
+    transition: all 0.3s;
+
+}
+
+.fact-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--gray);
+    transition: all 0.3s;
+
+}
 
 
+/* fact area css end */
+
+/* sponsor area css start  */
+.sponsor-content {
+    max-width: 542px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sponsor-warper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 125px;
+}
+
+.sponsor-item>img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.sponsor-item>img:hover {
+    filter: grayscale(0);
+}
+
+/* sponsor area css end */
+/* .footer area css start  */
+.footer {
+    margin-bottom: 130px;
+}
+
+.copyRight-area {
+    padding: 40px 0;
+    background-color: var(--bgColor);
+
+}
+
+.copy-right-text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--hitGray);
+}
+
+/* .footer area css end */
 
 /* responsive device css start  */
 /* _______________________
@@ -239,7 +354,7 @@ mobile device view
     }
 
     .section-title {
-        font-size: 35px;
+        font-size: 30px;
         margin-bottom: 18px;
     }
 
@@ -248,7 +363,8 @@ mobile device view
         margin-bottom: 20px;
     }
 
-    .main {
+    .main,
+    .margin-top-section {
         margin-top: 45px;
     }
 
@@ -275,16 +391,66 @@ mobile device view
         font-size: 30px;
     }
 
-
-
     .quick_feature_area {
         padding: 0;
+    }
+    .quick_feature_content{
+        text-align: center;
     }
 
     .quick_feature_object {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .love-enjoy-feature {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .experience-year {
+        position: static;
+        margin-top: 30px;
+    }
+
+    .feature-item {
+        padding: 15px;
+    }
+
+    .experience-year .year-btn span {
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .fect-area-content {
+        width: 100%;
+        text-align: center;
+    }
+    .fact-warper {
+        flex-wrap: wrap;
+        margin-top: 50px;
+        padding: 0;
+        gap: 30px;
+    }
+    .sponsor-warper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .sponsor-item {
+        text-align: center;
+    }
+
+    .sponsor-item>img {
+        width: 50%;
+    }
+    .footer{
+        margin-bottom: 45px;
+    }
+
+    .copy-right-text {
+        font-size: 15px;
+    }
 }
 
 
