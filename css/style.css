@@ -299,6 +299,60 @@ body {
 
 
 /* fact area css end */
+/* team member css start  */
+.team-area{
+    text-align: center;
+}
+.team-area-specail-text{
+    color: var(--orange);
+}
+.member-warper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin-top: 45px;
+}
+.member{
+    padding: 10px;
+    box-shadow: 0px 1px 10px -3px var(--gray);
+    border-radius: 5px;
+}
+.member:hover img{
+    filter: grayscale(100%);
+}
+.member-img{
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    
+
+}
+.member-img img{
+    width: 236px;
+    height: 236px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+.member-info{
+    text-align: left;
+}
+.member-position{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray);
+    margin-bottom: 5px;
+}
+.member-title{
+font-size: 20px;
+font-weight: 600;
+color: var(--dark);
+text-transform: uppercase;
+margin-bottom: 5px;
+}
+
+/* team member css end */
 
 /* sponsor area css start  */
 .sponsor-content {
@@ -433,6 +487,13 @@ mobile device view
         padding: 0;
         gap: 30px;
     }
+    .member-warper{
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 30px;
+    }
+    .member-info{
+        text-align: center;
+    }
     .sponsor-warper {
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
@@ -492,6 +553,13 @@ mobile device view
     .fact-warper {
         flex-wrap: wrap;
         margin-top: 50px;
+    }
+    .member-warper{
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 30px;
+    }
+    .member-info{
+        text-align: center;
     }
     .sponsor-warper{
         grid-template-columns: repeat(3,1fr);
